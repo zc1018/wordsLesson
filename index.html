@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100天核心5000词 Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="demo-shell">
+      <section class="phone" aria-label="100天核心5000词移动端Demo">
+        <div class="status-bar" aria-hidden="true">
+          <span>9:41</span>
+          <span class="status-icons">●●● 5G ▰</span>
+        </div>
+
+        <section id="screen-home" class="screen screen-active" data-screen="home">
+          <header class="hero-header">
+            <div>
+              <p class="eyebrow">Day 2 · 词源学</p>
+              <h1>100天搞定核心5000英语词</h1>
+              <p class="hero-copy">用词源、词根词缀和轻交互，把核心词真正记住。</p>
+            </div>
+            <div class="app-badge">100</div>
+          </header>
+
+          <section class="progress-card">
+            <div class="progress-top">
+              <span>今日学习</span>
+              <strong>1 / 12 词</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill"></div>
+            </div>
+          </section>
+
+          <section class="card assessment-entry-card">
+            <p class="section-label">营前入门测</p>
+            <h2>先测核心词汇底盘</h2>
+            <p>约 10 分钟完成快速识别和含义校准，生成你的 100 天个性化词汇路径。</p>
+            <div class="assessment-metrics">
+              <span>1K-5K 分层</span>
+              <span>虚熟词识别</span>
+              <span>5000词打标</span>
+            </div>
+            <button class="primary-button" data-action="start-assessment">开始入门测</button>
+          </section>
+
+          <section class="card today-card">
+            <p class="section-label">今日核心词</p>
+            <div class="word-row">
+              <div>
+                <h2>echo</h2>
+                <p>回声；回响；共鸣</p>
+              </div>
+              <button class="round-button" data-action="pronounce" aria-label="播放发音">▶</button>
+            </div>
+          </section>
+
+          <section class="card">
+            <p class="section-label">本课你将学到</p>
+            <div class="goal-grid">
+              <div class="goal-item"><span>⌘</span>词源解释</div>
+              <div class="goal-item"><span>▣</span>词源故事</div>
+              <div class="goal-item"><span>↗</span>含义变化</div>
+              <div class="goal-item"><span>✓</span>练一练</div>
+            </div>
+          </section>
+
+          <button class="secondary-button" data-nav="word">跳过测评，体验 Day 2</button>
+        </section>
+
+        <section id="screen-assessment-intro" class="screen" data-screen="assessment-intro">
+          <header class="top-bar top-title">
+            <button class="icon-button" data-nav="home" aria-label="返回">‹</button>
+            <h2>入门测</h2>
+            <span></span>
+          </header>
+
+          <section class="assessment-hero-card">
+            <p class="eyebrow">MVP · 8-12 分钟</p>
+            <h2>测出你的核心 5000 词起点</h2>
+            <p>先用快速识别收集熟悉感，再用含义选择题校准真实掌握，最后生成熟悉度标签和学习路径。</p>
+          </section>
+
+          <section class="card">
+            <p class="section-label">测评流程</p>
+            <div class="flow-steps">
+              <div class="flow-step">
+                <span>01</span>
+                <div>
+                  <strong>快速识别</strong>
+                  <p>看到单词后选择认识、不确定或不认识。</p>
+                </div>
+              </div>
+              <div class="flow-step">
+                <span>02</span>
+                <div>
+                  <strong>含义校准</strong>
+                  <p>用 4 选 1 判断词义，识别虚熟词。</p>
+                </div>
+              </div>
+              <div class="flow-step">
+                <span>03</span>
+                <div>
+                  <strong>路径生成</strong>
+                  <p>输出层级掌握率、熟悉度分布和 Day 1 编排。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card compact-note">
+            <strong>本 demo 用代表性题目演示完整链路</strong>
+            <p>正式版按方案扩展为 A 段 60 个真实词 + 10 个校准项，B 段 25 道含义选择题。</p>
+          </section>
+
+          <button class="primary-button" data-action="begin-assessment">开始快速识别</button>
+        </section>
+
+        <section id="screen-assessment-quick" class="screen" data-screen="assessment-quick">
+          <header class="top-bar top-title">
+            <button class="icon-button" data-nav="assessment-intro" aria-label="返回">‹</button>
+            <h2>快速识别</h2>
+            <span></span>
+          </header>
+
+          <section class="assessment-progress-card">
+            <div class="progress-top">
+              <span data-quick-progress>第 1 / 6 题</span>
+              <strong>A 段</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-quick-fill></div>
+            </div>
+          </section>
+
+          <section class="assessment-question-card">
+            <div class="question-meta">
+              <span data-quick-band>1K 高频</span>
+              <span data-quick-type>真实词</span>
+            </div>
+            <h2 data-quick-word>claim</h2>
+            <p data-quick-prompt>你看到这个词时的第一反应是？</p>
+          </section>
+
+          <div class="recognition-actions">
+            <button class="recognition-button yes" data-recognition="yes">
+              <strong>认识</strong>
+              <span>能想到大致含义</span>
+            </button>
+            <button class="recognition-button unsure" data-recognition="unsure">
+              <strong>不确定</strong>
+              <span>眼熟但说不准</span>
+            </button>
+            <button class="recognition-button no" data-recognition="no">
+              <strong>不认识</strong>
+              <span>没有稳定印象</span>
+            </button>
+          </div>
+        </section>
+
+        <section id="screen-assessment-calibration" class="screen" data-screen="assessment-calibration">
+          <header class="top-bar top-title">
+            <button class="icon-button" data-nav="assessment-quick" aria-label="返回">‹</button>
+            <h2>含义校准</h2>
+            <span></span>
+          </header>
+
+          <section class="assessment-progress-card">
+            <div class="progress-top">
+              <span data-calibration-progress>第 1 / 4 题</span>
+              <strong>B 段</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-calibration-fill></div>
+            </div>
+          </section>
+
+          <section class="assessment-question-card">
+            <div class="question-meta">
+              <span data-calibration-band>2K 核心</span>
+              <span>含义选择</span>
+            </div>
+            <h2 data-calibration-word>claim</h2>
+            <p data-calibration-context>She made a claim about the result.</p>
+          </section>
+
+          <section class="card calibration-options" data-calibration-options></section>
+        </section>
+
+        <section id="screen-assessment-report" class="screen" data-screen="assessment-report">
+          <header class="top-bar top-title">
+            <button class="icon-button" data-nav="home" aria-label="返回">‹</button>
+            <h2>起点诊断</h2>
+            <span></span>
+          </header>
+
+          <section class="report-hero">
+            <p class="eyebrow">你的核心 5000 词起点</p>
+            <h2><span data-known-count>约 2350</span> 个较熟悉</h2>
+            <p data-report-summary>3K 后开始断裂，存在少量虚熟词，建议 Day 1 优先纠偏并增加早期复习。</p>
+          </section>
+
+          <section class="card">
+            <div class="section-row">
+              <p class="section-label">1K-5K 掌握图</p>
+              <span data-false-alarm>校准偏差 17%</span>
+            </div>
+            <div class="band-chart" data-band-chart></div>
+          </section>
+
+          <section class="card">
+            <p class="section-label">熟悉度分布</p>
+            <div class="familiarity-grid" data-familiarity-grid></div>
+          </section>
+
+          <section class="card">
+            <p class="section-label">系统已生成 5000 词初始标记</p>
+            <div class="tag-table" data-tag-table></div>
+          </section>
+
+          <section class="card path-card">
+            <p class="section-label">Day 1 编排</p>
+            <div class="path-item">
+              <strong>熟悉词</strong>
+              <span>轻触达，低频复习</span>
+            </div>
+            <div class="path-item">
+              <strong>半熟词</strong>
+              <span>正常学习，D+1 / D+4 复习</span>
+            </div>
+            <div class="path-item">
+              <strong>虚熟词</strong>
+              <span>先纠错再讲解，进入高优先级队列</span>
+            </div>
+          </section>
+
+          <button class="primary-button" data-nav="word">进入个性化学习样例</button>
+          <button class="secondary-button" data-action="begin-assessment">重新测一次</button>
+        </section>
+
+        <section id="screen-word" class="screen" data-screen="word">
+          <header class="top-bar">
+            <button class="icon-button" data-nav="home" aria-label="返回">‹</button>
+            <button class="icon-button" data-action="bookmark" aria-label="收藏">♡</button>
+          </header>
+
+          <section class="word-hero">
+            <div class="temple-bg" aria-hidden="true"></div>
+            <h2>echo</h2>
+            <div class="phonetic-row">
+              <span>/'ekəu/</span>
+              <button class="sound-button" data-action="pronounce" aria-label="播放 echo 发音">♪</button>
+            </div>
+            <p class="meaning">回声；回响</p>
+          </section>
+
+          <section class="learning-path-note">
+            <strong>入门测路径</strong>
+            <span data-learning-path-note>echo 标记为半熟词：正常学习，D+1 / D+4 复习。</span>
+          </section>
+
+          <section class="card media-card empty-media">
+            <div class="card-tag">真人老师讲解</div>
+            <button class="video-placeholder" data-action="empty-teacher" aria-label="老师讲解待接入">
+              <span class="play-icon">▶</span>
+            </button>
+            <p>老师讲解视频待接入</p>
+          </section>
+
+          <section class="card">
+            <p class="section-label">本课你将学到</p>
+            <div class="goal-grid">
+              <button class="goal-button" data-flip="etymology"><span>⌘</span>词源解释</button>
+              <button class="goal-button" data-flip="etymology"><span>▣</span>词源故事</button>
+              <button class="goal-button" data-flip="etymology"><span>↗</span>含义变化</button>
+              <button class="goal-button" data-nav="practice"><span>✓</span>练一练</button>
+            </div>
+          </section>
+
+          <button class="flip-cue" data-flip="etymology" aria-label="翻页查看词源故事">
+            <span>左滑翻页</span>
+            <strong>翻转看词源故事</strong>
+            <em>›</em>
+          </button>
+        </section>
+
+        <section id="screen-etymology" class="screen" data-screen="etymology">
+          <header class="top-bar top-title">
+            <button class="icon-button" data-nav="word" aria-label="返回">‹</button>
+            <h2>词源解释</h2>
+            <span></span>
+          </header>
+
+          <section class="story-banner">
+            <video
+              class="story-video"
+              src="assets/echo-etymology-image2.mp4"
+              controls
+              preload="metadata"
+              playsinline
+              data-story-video
+            ></video>
+            <div class="autoplay-badge" data-autoplay-badge>
+              <span>♬</span>
+              自动播放中
+            </div>
+          </section>
+
+          <section class="card timeline-card">
+            <p class="section-label etymology-panel-title">词源解释</p>
+            <div class="timeline-item">
+              <span class="language-pill">Greek</span>
+              <div>
+                <strong>ēkhō (echo)</strong>
+                <p>回声；回响</p>
+              </div>
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-item">
+              <span class="language-pill">Latin</span>
+              <div>
+                <strong>echo</strong>
+                <p>回声</p>
+              </div>
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-item">
+              <span class="language-pill">English</span>
+              <div>
+                <strong>echo</strong>
+                <p>回声；回应；附和</p>
+              </div>
+            </div>
+
+            <div class="memory-card etymology-memory">
+              <span>▣</span>
+              <p>echo 最早表示“回声、回响”，后来也可引申为“回应、附和”。</p>
+            </div>
+          </section>
+
+          <button class="primary-button" data-nav="practice">去练一练</button>
+        </section>
+
+        <section id="screen-practice" class="screen" data-screen="practice">
+          <header class="top-bar top-title">
+            <button class="icon-button" data-nav="etymology" aria-label="返回">‹</button>
+            <h2>互动练习</h2>
+            <span></span>
+          </header>
+
+          <section class="card quiz-card" data-quiz="choice">
+            <p class="question-title">1. echo 最接近哪个含义？</p>
+            <button class="choice" data-choice="0">A. 回声；回响</button>
+            <button class="choice" data-choice="1">B. 呼喊；大声说</button>
+            <button class="choice" data-choice="2">C. 沉默；安静</button>
+            <button class="choice" data-choice="3">D. 延迟；拖延</button>
+          </section>
+
+          <section class="card quiz-card" data-quiz="matching">
+            <p class="question-title">2. 词源连连看</p>
+            <div class="match-board">
+              <svg class="match-lines" data-match-lines aria-hidden="true"></svg>
+              <div class="match-column">
+                <button class="match-card" data-left="Greek ēkhō">Greek ēkhō</button>
+                <button class="match-card" data-left="Latin echo">Latin echo</button>
+                <button class="match-card" data-left="English echo">English echo</button>
+              </div>
+              <div class="match-column">
+                <button class="match-card" data-right="回声；回响">回声；回响</button>
+                <button class="match-card" data-right="回声">回声</button>
+                <button class="match-card" data-right="回声；回应；附和">回声；回应；附和</button>
+              </div>
+            </div>
+            <p class="match-hint">先点左侧词源，再点右侧含义。</p>
+          </section>
+
+          <section class="feedback-bar" data-feedback hidden>
+            <span class="feedback-check">✓</span>
+            <strong>回答正确，继续下一词！</strong>
+            <button class="round-button small" data-nav="result" aria-label="继续">→</button>
+          </section>
+        </section>
+
+        <section id="screen-result" class="screen" data-screen="result">
+          <header class="top-bar top-title">
+            <button class="icon-button" data-nav="practice" aria-label="返回">‹</button>
+            <h2>本词完成</h2>
+            <span></span>
+          </header>
+
+          <section class="result-panel">
+            <div class="success-mark">✓</div>
+            <h2>echo 已掌握</h2>
+            <p>你已经完成词义识别和词源连线。下一步可以进入同章节的 `chaos`、`panic` 或 `sandwich`。</p>
+          </section>
+
+          <section class="card">
+            <p class="section-label">同课可扩展词</p>
+            <div class="chip-list">
+              <span>chaos</span>
+              <span>panic</span>
+              <span>museum</span>
+              <span>boycott</span>
+              <span>sandwich</span>
+            </div>
+          </section>
+
+          <button class="primary-button" data-action="restart">重新演示</button>
+        </section>
+      </section>
+    </main>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
